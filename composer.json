@@ -1,0 +1,26 @@
+{
+    "name": "MomentD/diyApi",
+    "description": "个人DIY PHP框架",
+    "type": "project",
+    "require": {
+        "php": ">=7.1.0",
+        "psr/container": "^1.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MomentD",
+            "email": "y229885381@gmail.com.cn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Library\\": "library/",
+            "App\\": "app/"
+        },
+        "files": [
+            "library/Functions.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
