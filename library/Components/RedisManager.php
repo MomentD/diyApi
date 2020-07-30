@@ -59,7 +59,7 @@ class RedisManager
                 $res = $obj->$func( $params[0] , $params[1] , $params[2] );
                 break;
             case 4:
-                $res = $obj->$func( $params[0] , $params[1] , $params[2] , $params[4] );
+                $res = $obj->$func( $params[0] , $params[1] , $params[2] , $params[3] );
                 break;
         }
         return $res;
