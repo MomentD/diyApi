@@ -4,6 +4,7 @@
 # 说明
 
 > 思路来自laravel社区文章 [PHP DIY 系列](https://learnku.com/articles/40697) ，做了一些改动。
+> 此包仅供学习使用
 
 # 目录说明
 
