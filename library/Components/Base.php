@@ -10,6 +10,11 @@ namespace Library\Components;
 
 use ArrayAccess;
 
+/**
+ * 基础类
+ * Class Base
+ * @package Library\Components
+ */
 class Base implements ArrayAccess
 {
     private $_container;

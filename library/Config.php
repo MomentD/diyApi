@@ -6,14 +6,15 @@
  * Time: 11:15
  */
 
-/**
- * 系统配置
- */
-
 namespace Library;
 
 use Library\Tools\File;
 
+/**
+ * 公共Config类
+ * Class Config
+ * @package Library
+ */
 class Config
 {
     protected $config_array = [];
@@ -48,7 +49,7 @@ class Config
     /**
      * @param array $key
      */
-    public function set( array $key )
+    public function set( $key )
     {
         if (is_array( $key ))
         {
@@ -60,6 +61,7 @@ class Config
     }
 
     /**
+     * 加载所有配置信息
      * @param string $configDir
      */
     public static function loadConf( string $configDir ): void

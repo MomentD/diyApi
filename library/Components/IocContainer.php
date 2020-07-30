@@ -18,6 +18,7 @@ use ReflectionClass;
 use ReflectionException;
 
 /**
+ * 依赖注入核心类
  * Class IocContainer
  * @see     https://github.com/wazsmwazsm/IOCContainer/tree/master/src/IOC/Container.php
  * @package Library\Components

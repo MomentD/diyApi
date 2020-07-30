@@ -13,7 +13,6 @@ use Library\Exceptions\ContainerBadMethodException;
 use Library\Exceptions\NotFoundException;
 use Library\Https\Controller;
 use Library\Https\Request;
-use Library\Components\LoadRedis;
 use Library\Https\Response;
 use Redis;
 
@@ -33,6 +32,8 @@ class TestRedisController extends Controller
     /**
      * @param Request $request
      * @return Response
+     * @throws ContainerBadMethodException
+     * @throws NotFoundException
      */
     public function test_redis( Request $request )
     {
@@ -64,7 +65,7 @@ class TestRedisController extends Controller
         ];
         $key = $request->get( 'key' );
         $value = $request->get( 'value' );
-        //$this->redis->hSet( 'test_user' , $key , $value );
+        $this->redis->hSet( 'test_user' , $key , $value );
         $data = $this->redis->hGet( 'test_user' , $key );
         return $this->response->json( $data );
     }

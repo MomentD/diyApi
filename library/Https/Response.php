@@ -10,6 +10,11 @@ namespace Library\Https;
 
 use Library\Components\Base;
 
+/**
+ * 统一输出类
+ * Class Response
+ * @package Library\Https
+ */
 class Response extends Base
 {
     public $code = 0;

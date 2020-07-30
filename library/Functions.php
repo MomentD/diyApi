@@ -4,6 +4,7 @@
  * User: K0241222
  * Date: 2020/7/26
  * Time: 11:15
+ * Desc：公共方法类
  */
 
 use Library\Config;
@@ -25,7 +26,7 @@ if (!function_exists( 'split_str_to_array' ))
     }
 }
 /**
- * 打印公共方法
+ * 简单的打印公共方法
  */
 if (!function_exists( "p" ))
 {

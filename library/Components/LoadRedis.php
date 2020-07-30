@@ -13,6 +13,11 @@ use Library\Exceptions\NotFoundException;
 use Library\Tools\RedisService;
 use Redis;
 
+/**
+ * 加载RedisService，创建单例
+ * Class LoadRedis
+ * @package Library\Components
+ */
 class LoadRedis
 {
     /**

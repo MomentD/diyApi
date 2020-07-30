@@ -13,6 +13,11 @@ use Library\Exceptions\NotFoundException;
 use Library\Tools\RedisService;
 use Redis;
 
+/**
+ * redis的一些方法，Controller中使用redis时，需要实例化的类
+ * Class RedisManager
+ * @package Library\Components
+ */
 class RedisManager
 {
     /**

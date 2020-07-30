@@ -7,6 +7,11 @@
  */
 
 namespace Library\Https;
+/**
+ * 基础控制器
+ * Class Controller
+ * @package Library\Https
+ */
 class Controller
 {
     protected $response;

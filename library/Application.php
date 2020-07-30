@@ -13,6 +13,11 @@ use Library\Https\Request;
 use Library\Https\Response;
 use ReflectionException;
 
+/**
+ * app统一启动器
+ * Class Application
+ * @package Library
+ */
 class Application
 {
     private $request;
